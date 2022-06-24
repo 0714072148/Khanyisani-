@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>radius</title>
+</head>
+<body>
+<script type="text/Javascript">
+
+
+var length, breadth, radius, area_of_Rectangle, area_of_circle, surface_area, v;
+
+breadth = parseInt(prompt("enter breadth"));
+radius = parseInt (prompt("enter radius"));
+
+length = radius * 2;
+
+area_of_circle = 3,141 * (Math.pow(radius,2));
+area_of_Rectangle = length * breadth;
+surface_area = area_of_circle + area_of_Rectangle;
+v = (3,141 * (radius * radius)) * breadth;
+
+document.write(v);
+
+</script>
+</body>
+</html>

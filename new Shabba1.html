@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+<h1>11 Tip Calculator</h1>
+<p>Enter your meal amount and choose a tip amount.</p>
+<p> Meal: $ <input type = "text" id="meal"></p>
+<button onclick="tip15()">15%</button>
+<button onclick="tip20()">20%</button>
+<button onclick="tip25()">25%</button>
+<p>Tips: $ <input type= "text" id= "tip"></p>
+<p>Total: $ <input type= "text" id= "total"></p>
+
+</body>
+<script type="text/javascript">
+function tip15(){
+	var meal = document.getElementById("meal").value;
+	meal = parseFloat(meal);
+	document.getElementById("tip").innerHTML;
+	
+	var tip = meal * .15;
+	document.getElementById("tip").value = tip.toFixed(2);
+	document.getElementById("tip");
+	
+	var total = meal + tip;
+	document.getElementById("total").value = total.toFixed(2);
+	}
+	
+	function tip20(){
+	var meal = document.getElementById("meal").value;
+	meal = parseFloat(meal);
+	document.getElementById("tip").innerHTML;
+	
+	var tip = meal * .20;
+	document.getElementById("tip").value = tip.toFixed(2);
+	document.getElementById("tip");
+	
+	var total = meal + tip;
+	document.getElementById("total").value = total.toFixed(2);
+	}
+	
+	function tip25(){
+	var meal = document.getElementById("meal").value;
+	meal = parseFloat(meal);
+	document.getElementById("tip").innerHTML;
+	
+	var tip = meal * .25;
+	document.getElementById("tip").value = tip.toFixed(2);
+	document.getElementById("tip");
+	
+	var total = meal + tip;
+	document.getElementById("total").value = total.toFixed(2);
+	}
+	
+</script>
+</html>

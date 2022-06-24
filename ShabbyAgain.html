@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+</body>
+
+<script type="text/javascript"> 
+function guessSquare() {
+    var input = parseInt(window.prompt("Enter a number", "Enter here"));
+    var c = 5;
+    var message = "Guess its square now in 5 tries";
+    (function receiveAnswer() {
+        var input2 = parseInt(window.prompt(message));
+        if (input2 == input * input) {
+            alert("Good!");
+        } else {
+            c--;
+            if (c === 0) {
+                alert("Ran out of attempts!");
+            } else {
+                message = "Wrong, enter again! " + c + " attempts left!";
+                receiveAnswer();
+            }
+        }
+    })();
+};
+
+</script>								 
+
+</html>

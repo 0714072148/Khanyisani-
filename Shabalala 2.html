@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+
+</body>
+<script type="text/javascript">
+var input = parseInt(prompt("Enter a number", "Enter here"));
+var input2 = parseInt(prompt("Guess its square now in 5 tries"));
+var num = Math.sqrt(input);
+
+var tries = 0;
+
+do{
+  if(input2 == num){
+	alert("Good!");
+	break;
+	
+  }else{
+	input2 = parseInt(window.prompt("Wrong, enter again!"));
+  }
+} while (++tries < 5);
+</script>
+</html>

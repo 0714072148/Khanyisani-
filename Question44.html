@@ -1,0 +1,52 @@
+<!DOCTYPE hmtl>
+	<html>
+		<head>
+			
+		</head>
+		<body>
+		</body>
+		<script>
+			var CollectionOfNumbz = [10]; /*Creating an Arryy*/
+			
+			
+			for( var i = 0; i<=10 ; i++)
+			{
+				var Digit = parseInt(prompt("Please enter a num"));
+				
+				CollectionOfNumbz.push(Digit);
+			};
+			
+			
+			
+	function display()	
+	
+        {    var string=";
+		
+            CollectionOfNumbz.forEach(function(element)
+            {
+                string+= element + ", ";
+            });
+
+           
+            document.write(string + "<br>");
+        };
+			
+			
+			
+			
+	 /*function display()
+        {    var string="";
+            golfScores.forEach(function(element)
+            {
+                string+= element + ", ";
+            });
+
+           
+            document.write(string + "<br>");
+        };
+			
+			document.write(CollectionOfNumbz[i]);
+		*/
+		
+		</script>
+	</html>

@@ -1,0 +1,33 @@
+<html>
+<head>
+<title>Using JavaScript</title>
+</head>
+<body>
+<script>
+
+/*today=new Date();
+var cmas = new Date(today.getFullYear(),11,25);*/
+
+var deadline= new Date("dec 25, 2019 12:00:23").getTime();
+
+/*if(today.getMonth()==11 && today.getDate()>25){
+	cmas.setFullYear(cmas.getFullYear()+1);
+}*/
+
+//var one_day=1000*60*60*24;
+
+var now = new Date().getTime();
+var t = deadline - now;
+var day = Math.floor(t/(1000*60*60*24));
+var hours = Math.floor((t%(1000*60*60*24))/(1000*60*60));
+var minutes = Math.floor((t%(1000*60*60))/(1000*60));
+var seconds = Math.floor((t%(1000*60))/(1000));
+
+//(Math.ceil((cmas.getTime()-today.getTime())/(one_day))
+
+alert (day + "d" + " : " + hours + "h" + " : " + minutes + "m" + " : " + seconds + "s " +  "left until christmas");
+
+
+</script>
+</body>
+</html>

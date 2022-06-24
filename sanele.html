@@ -1,0 +1,21 @@
+<!DOCTYPE html> 
+<html>
+<head>
+	<title>My world</title>
+</head>
+<body>
+	<script>
+	 var randommNumber = Math.floor((Math.random()*10)+1);
+	 
+	 var NumberFromUser = parseInt(prompt("Guess a number between 1-10 	"));
+
+		if( NumberFromUser == randommNumber)
+		{
+			document.write("You guessed correctly!!!");
+		}else{
+			alert("You guessed incorrectly , the number was: " + randommNumber)
+			};
+    </script>
+	<button onclick="location.reload()">Retry</button>
+</body>
+</html>

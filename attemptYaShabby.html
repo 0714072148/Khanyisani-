@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+	<head>
+			<title>Guess square</title>
+	</head>
+	<body>
+	</body>
+	<script>
+		var tries = 0;
+	var input1 = parseInt(prompt("Enter a number here"));
+	var input2 = parseInt(prompt("Start the tries now!  " +  tries));
+	var num = Math.sqrt(input1);
+
+	
+	
+	do {
+		if(input2 == num){
+		alert("Thats wassup");
+		break;
+		}else{
+		 input2 = parseInt(prompt("You fuckin wrong" + tries));
+		
+		}	
+		
+		
+		
+	}while(++ tries < 6);
+	
+	</script>
+</html>

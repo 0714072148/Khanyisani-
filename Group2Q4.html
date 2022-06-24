@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>bubbleSort_algo</title>
+</head>
+<body>
+    
+</body>
+<script>
+    //var Numbers=[6,4,0,3,2,1]; var lowest = Numbers[0];for(var check = 0; check <6; check++){if(lowest>Numbers[check])document.write(Numbers[check]); }
+    var InputA = new Array()
+    for (var i = 0; i<= 4; i++)
+    {
+        InputA[i]= parseInt(prompt("enter a number"));
+    };
+     Array.prototype.bub = function()
+    {
+        var is_sorted = false;
+            while(!is_sorted)
+            {
+                is_sorted = true;
+                for(var n = 0; n<InputA.length-1; n++)
+                {
+                    if(InputA[n] > InputA[n+1])
+                    {
+                        var x = InputA[n+1];
+                        InputA[n+1] = InputA[n]; // re making our array 
+                        InputA[n] = x;
+                        is_sorted = false;
+                    }
+                }
+            }
+        return InputA;
+    };
+    document.write("Your sorted numbers are: " , InputA.bub());
+</script>
+</html>

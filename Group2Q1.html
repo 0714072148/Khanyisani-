@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            JS Programming Basics 2 - Conditional Statements
+        </title>
+        <style>
+            body {
+                background-color: azure;
+				padding-left: 45px;
+            }
+			
+			h1 {
+				color: blue;
+				font-family: 'Trebuchet MS', Arial, sans-serif;
+				font-weight: normal;
+				text-transform: uppercase;
+				text-align: center;
+			}
+        </style>
+	</head>
+	<body>
+	
+		<h1>Table</h1>
+	
+				<!--draw table-->
+	<center>
+		<table border>
+			<script>
+				var r = parseInt(prompt("Enter #rows"));
+				var c = parseInt(prompt("Enter #columes"));
+
+			function Table(r,c)
+			{
+					for(var row = 1; row <= r; row++)
+				{  // row++ = row + 1
+
+					document.write("<tr>"); //draw row
+
+						for(var col = 1; col <= c; col++)
+						{
+							document.write("<td><center> " + "r" +row + "," + "c" + col + " </center></td>");
+						}
+
+					document.write("</tr>");//close row
+				}
+			}
+				Table(r,c)
+			
+			</script>
+		</table>
+	</center>
+	</body>
+</html>

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Whatever</title>
+</head>
+<body>
+<script type="text/Javascript">
+var Length, breadth, raduis, AreaOfRectangle, AreaOfCircle, SurfaceArea, v
+
+breadth = parseInt(prompt("Enter breadth "));
+raduis = parseInt(prompt("Enter raduis"));
+
+lenght= raduis * 2;
+
+AreaOfCircle = Math.PI * (raduis * raduis);
+			//=3,14 * (Math.pow(radius, 2))
+			
+AreaOfRectangle = lenght * breadth;
+
+SurfaceArea = AreaOfCircle + AreaOfRectangle;
+
+V = SurfaceArea*(raduis/2 - Math.PI * (raduis * raduis * raduis));
+//V = 3.
+
+document.write(v);
+
+</script>
+</body>
+</html>

@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Volume Of a Cylinder</title>
+</head>
+<body>
+    
+</body>
+    <script>
+        var height= parseInt(prompt("Enter Your Cylinder Height"));
+        var diameter = parseInt(prompt("Enter Your Cylinder diameter"));
+        var radius;
+
+        function Cylinder(cyl_height,cyl_diameter)
+        {
+            height = cyl_height;
+            diameter = cyl_diameter;
+        }
+        
+        Cylinder.prototype.Volume = function(){     
+
+             radius = diameter/2;
+            return height*Math.PI*radius*radius;
+        };
+
+        var cyl = new Cylinder(height,diameter);
+        
+        document.write('The is volume = ', cyl.Volume().toFixed(4) , "<br><br>");
+
+        document.write("The Height was: " , height , " cm","<br>");
+        document.write("Your diameter is: " , diameter , " cm" , "<br>");
+        document.write("The radius is: " , radius , " cm")
+
+    </script>
+</html>

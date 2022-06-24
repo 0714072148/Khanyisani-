@@ -1,0 +1,37 @@
+<html>
+<head>
+<title>Using JavaScript</title>
+</head>
+<body>
+<script>
+
+alert("hello");
+
+/*function vowel_count(str1){
+	
+	var vowel_list = 'aeiouAEIOU';
+	var vcount = 0;
+
+	for(vax x=0;x<str1.length;x++){
+
+	if(vowel_list.indexOf(str1[x])!==-1){
+
+	vcount+=1;
+}
+}
+	return vcount;
+}
+
+	alert(vowel_count("The quick brown fox"));
+*/
+function vowel_Count(str){
+	return str.replace(/[^aeiou]/g,"").length;
+}
+
+	alert(vowel_Count("Python"));
+	alert(vowel_Count("w3resyoudfrse.com"));
+
+
+</script>
+</body>
+</html>

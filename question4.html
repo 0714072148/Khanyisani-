@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Pratical</title>
+</head>
+<body>
+    <button onclick="Calculate()" value="Average">Average</button>
+</body>
+
+<script>
+       
+ 
+var arr = [];                    //define our array
+
+var numofScores= parseInt(prompt("Enter The total Number of Scores"));
+
+if(numofScores<10){
+    do {
+            for (var i= 1 ; i <= numofScores; i++) {        // loop 10 times 
+                 arr[i] =eval(prompt("Enter grade"));        // push the value into the array
+                 }           
+    } while (numofScores  >10);
+}
+else{
+    alert("Out of range!!!");
+    numofScores= parseInt(prompt("Enter The total Number of Scores"));   
+    do {
+            for (var i= 1 ; i <= numofScores; i++) {        // loop 10 times 
+                 arr[i] =eval(prompt("Enter grade"));        // push the value into the array
+                 }           
+    } while (numofScores  >10);
+};
+
+//alert("Full array: " + arr.join(","));
+</script>
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	<script>
+				function validateYaKaybee(){
+				 var name = document.forms["Kaybee"]["Name"];
+				 var address = document.forms["Kaybee"]["Address"];
+				 var Email = document.forms["Kaybee"]["EmailAdress"];
+				 var  Telephone= document.forms["Kaybee"]["Telephone"];
+				 var Password= document.forms["Kaybee"]["Password"];
+				 var Course = document.forms["Kaybee"]["Course"];
+				}
+				
+				if (name.value == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter name");
+				//name.focus()
+				
+				}
+				
+				if (address.value == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter address");
+				//address.focus()
+				return false;
+				}
+				
+				if (Email.value == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter E-mail");
+				//E-mail.focus()
+				return false;
+				}
+				
+				if (Telephone.value == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter Telephone");
+				//Telephone.focus()
+				return false;
+				}
+				
+				if (Password.value == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter Password");
+				//Password.focus()
+				return false;
+				}
+				
+				if (Course.selectedIndex < 1 == ""){
+				alert("Ekse,Kaybee don't give a Fuck so Enter Course");
+				//Course.focus()
+				return false;
+				}
+				
+				return true;
+				};
+		</script>
+	</head>
+<body>
+		<center>
+				<h1><b><u><i>REGISTRATION FORM</i></u></b></h1>
+		<div>	
+				<form name="Kaybee"  action="Kaybee" onsubmit="return validateYaKaybeealidateKaybeelidateKaybee()" method="post">
+				
+					<p><label>Name <input type="text" placeholder="enter your name" style="width: 40%;" name = "Name"></label></p><br>
+					<p><label>Address <input type="text" placeholder="enter your address" style="width: 40%;" name = "Address"></label></p><br>
+					<p><label>E-mail Address <input type="text" placeholder="enter your e-mail" style="width: 40%;" name = "EmailAdress"></label></p><br>
+					<p><label>Password <input type="password" placeholder="enter your password" style="width: 40%;" name = "Password"></label></p><br>
+					<p><label>Telephone <input type="number" placeholder="enter your cell-number" style="width: 40%;" name = "Telephone"></label></p><br>
+					
+					<p><label>SELECT YOUR COURSE <select style="width: 40%;" name="Course">
+					
+														<option>-----select a course----</option>
+												
+                                                        <option>BSc IT</option>
+														<option>Computer Sci</option>
+														<option>Medicine</option>
+													
+												</select></label></p>
+						<br><br>
+												
+					<p>Comments <textarea placeholder="any comment?" rows="" cols="50" style="width: 40%;" name="Comment"> </textarea></p>
+					
+						
+					<input type = "submit" value = "send" name="Submit">
+					<input type = "reset" value="Reset" name="Reset">
+				</form>
+		
+		</div>
+		</center>
+
+</body>
+		
+</html>

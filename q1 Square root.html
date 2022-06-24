@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Table with 500 rows</title>
+</head>
+<body>
+<button onclick= "Calculate()" id="kaybee" value="submit">Find_the_square_root</button>
+
+</body>
+
+<script type="text/Javascript">
+function Calculate()  {
+
+
+var num = prompt("Enter Square num");
+
+var SquareRoot;
+SquareRoot = Math.sqrt(num);
+var Number = [4]
+
+for (var i = 0; i<=4; i++) {
+Number[i] = prompt("Guess the number");
+}
+if (SquareRoot ==Number[i]) {
+document.write("<br>" + "Guess correct"+ Number[i]);
+}
+else{
+document.write("<br>" + "Guess WRONG");
+}
+document.getElementById('kaybee').innerHTML=kaybee;
+}
+Calculate();
+
+</script>
+</html>

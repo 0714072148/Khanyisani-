@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+
+        
+        document.write("<h1>" +  "Golfscore Program..."  + "</h1>" + "<br>");
+        document.write("please enter up to 10 golfscores : ");
+
+        var golfScores=[];
+
+        for (var i=0; i<10; i++)
+        {
+            var newScore= Number(prompt("Submit a score"));
+            golfScores.push(newScore);
+        }
+    
+        function display()
+        {    var string="";
+            golfScores.forEach(function(element)
+            {
+                string+= element + ", ";
+            });
+
+           
+            document.write(string + "<br>");
+        };
+
+       /* function average()
+        {   var sum =0;
+            golfScores.forEach(function(element)
+            {
+                sum +=element;
+            });
+            document.write("Average of golfscores = " + sum/golfScores.length);
+        }
+       
+        display();
+        average()*/
+		
+    </script>
+</head>
+<body style="text-align: center;">
+
+</body>
+</html>
